@@ -3,21 +3,34 @@
 #### 介绍
 纯前端，轻量，使用方便嗷
 
-#### 软件架构
-软件架构说明
-
-
 #### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  在您的HTML代码里添加一段
+````html
+<script src="https://cdn.jsdelivr.net/gh/ArSrNa/arlrc2html/js/arlrc2html.js"></script>
+````
 
-#### 使用说明
+2. 用法：HTML里添加一段
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+````js
+var json = {"time":"00:19.54","timeout":20 ,"lrc":"いつまでも忘れない　best of my love"},{......}
+arlrcGenerate(json,'音视频控件id','显示时间的控件ID','显示歌词的控件ID')
+//这里的json就是你的歌词json变量，要求看下面
+````
+
+3. json格式要求
+````json
+{"time":"00:19.54","timeout":20 ,"lrc":"いつまでも忘れない　best of my love"},
+{"time":"lrc时间","timeout":时间秒数 ,"lrc":"歌词内容"},
+````
+| 对象      | 释义    | 类型          |
+|---------|-------|-------------|
+| time    | lrc时间 | string      |
+| timeout | 时间秒数  | number(K∈R) |
+| lrc     | 歌词内容  | string      |
+
+参见：[Ar-Sr-Na | 【教程】纯前端做一个歌词显示的音乐播放器](https://cloud.tencent.com/developer/article/1826702)
+
 
 #### 参与贡献
 
@@ -26,12 +39,5 @@
 3.  提交代码
 4.  新建 Pull Request
 
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+此致
+Ar-Sr-Na云计算项目- Ar-Sr-Na
