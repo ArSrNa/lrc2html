@@ -1,5 +1,7 @@
 # ArLRC To HTML-纯前端原生带歌词音乐播放器
 
+原理参见：[Ar-Sr-Na | 【教程】纯前端做一个歌词显示的音乐播放器](https://cloud.tencent.com/developer/article/1826702)
+
 #### 介绍
 纯前端，轻量，使用方便嗷
 
@@ -7,7 +9,7 @@
 
 1.  在您的HTML代码里添加一段
 ````html
-<script src="https://cdn.jsdelivr.net/gh/ArSrNa/arlrc2html/js/arlrc2html.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/ArSrNa/lrc2html/js/arlrc2html.js"></script>
 ````
 
 2. 用法：HTML里添加一段
@@ -29,7 +31,6 @@ arlrcGenerate(json,'音视频控件id','显示时间的控件ID','显示歌词�
 | timeout | 时间秒数  | number(K∈R) |
 | lrc     | 歌词内容  | string      |
 
-参见：[Ar-Sr-Na | 【教程】纯前端做一个歌词显示的音乐播放器](https://cloud.tencent.com/developer/article/1826702)
 
 
 #### 参与贡献
