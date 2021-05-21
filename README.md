@@ -12,6 +12,11 @@
 <script src="https://cdn.jsdelivr.net/gh/ArSrNa/lrc2html/js/arlrc2html.js"></script>
 ````
 
+注：如果需要lrc转array，请再引用
+````html
+<script src="https://cdn.jsdelivr.net/gh/ArSrNa/lrc2html/js/lrc2array.js"></script>
+````
+
 2. 用法：HTML里添加一段
 
 #### 如果是JSON格式的歌词：
@@ -28,6 +33,10 @@ var array = [130,"どこまでも続く空"],[......],
 arlrc.array(array,'音视频控件id','显示歌词的控件ID')
 //这里的array就是你的歌词array变量，要求看下面
 ````
+
+转换成array的lrc，请直接使用parseLyric(text)
+text是您的lrc文本
+
 
 
 ## 格式要求
